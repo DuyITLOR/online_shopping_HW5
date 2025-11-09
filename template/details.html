@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karma Shop - Product Details</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&amp;family=Roboto:wght@400;500&amp;display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="bg-[url('img/banner-bg.jpg')] text-white bg-cover bg-center py-8">
+        <nav class="container mx-auto bg-white border-gray-200  rounded-lg">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"><a
+                    class="flex items-center space-x-3 rtl:space-x-reverse" href="/" data-discover="true"><img
+                        class="h-8" alt="Karma Logo" src="img/logo.png"></a>
+                <div class="flex md:order-2">
+                    <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+                        aria-expanded="false"
+                        class="md:hidden text-gray-500 hover:bg-gray-100  focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2.5 me-1">
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path>
+                        </svg>
+                        <span class="sr-only">Search</span>
+                    </button>
+                    <div class="relative hidden md:block">
+                        <form>
+                            <div class="absolute inset-y-0 end-3 flex items-center ps-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500 " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path>
+                                </svg>
+                                <span class="sr-only">Search icon</span>
+                            </div>
+                            <input
+                                class="block text-sm focus:ring-blue-500 focus:border-orange-600 w-full border !border-orange-400 rounded-full py-2.5 px-5 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                placeholder="Search..." type="text" value="">
+                        </form>
+                    </div>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+                    <div class="relative mt-3 md:hidden">
+                        <form>
+                            <div class="absolute inset-y-0 end-3 flex items-center ps-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path>
+                                </svg>
+                            </div>
+                            <input
+                                class="block text-sm focus:ring-blue-500 focus:border-orange-600 w-full border !border-orange-400 rounded-full py-2.5 px-5 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                placeholder="Search..." type="text" value="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container hidden md:block mx-auto text-end px-8 py-28 relative z-0">
+            <h1 class="text-4xl font-bold mb-2">Karma Shop</h1>
+            <nav class="text-sm space-x-2 "><a class="hover:underline font-bold" href="index.html"
+                    data-discover="true">Home</a><svg class="w-6 h-6 inline" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 12H5m14 0-4 4m4-4-4-4"></path>
+                </svg><a class="font-bold">Product Details</a></nav>
+        </div>
+    </header>
+    <section class="container mx-auto py-16 px-4 grid md:grid-cols-2 gap-10">
+        <div><img alt="Ergonomic Gold Tuna" class="w-full" src="img/product/p1.jpg">
+        </div>
+        <div>
+            <h3 class="text-2xl font-semibold mb-2">Ergonomic Gold Tuna</h3>
+            <h2 class="text-3xl font-bold text-orange-600 mb-3">$416.68</h2>
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                    stroke="currentColor" stroke-width="0" viewBox="0 0 20 20" data-testid="flowbite-rating-star"
+                    class="h-5 w-5 text-yellow-400">
+                    <path stroke="none"
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                    stroke="currentColor" stroke-width="0" viewBox="0 0 20 20" data-testid="flowbite-rating-star"
+                    class="h-5 w-5 text-yellow-400">
+                    <path stroke="none"
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                    stroke="currentColor" stroke-width="0" viewBox="0 0 20 20" data-testid="flowbite-rating-star"
+                    class="h-5 w-5 text-gray-300 dark:text-gray-500">
+                    <path stroke="none"
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                    stroke="currentColor" stroke-width="0" viewBox="0 0 20 20" data-testid="flowbite-rating-star"
+                    class="h-5 w-5 text-gray-300 dark:text-gray-500">
+                    <path stroke="none"
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                    stroke="currentColor" stroke-width="0" viewBox="0 0 20 20" data-testid="flowbite-rating-star"
+                    class="h-5 w-5 text-gray-300 dark:text-gray-500">
+                    <path stroke="none"
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z">
+                    </path>
+                </svg>
+            </div>
+            <p class="text-gray-600 my-6">Ergonomic Pizza designed with Steel for advanced performance</p>
+            <div class="flex items-center mb-6"><label for="qty" class="mr-3 font-medium">Quantity:</label><input
+                    id="qty" min="1" class="w-20 border rounded text-center" type="number" value="1"></div><button
+                class="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600">Add to Cart</button>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-gray-400 text-sm mt-16">
+        <div class="text-center py-4 border-t border-gray-800">
+            <p>© 2025 All rights reserved | Made with ❤️ by <a href="#"
+                    class="text-orange-500 hover:underline">Colorlib</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
