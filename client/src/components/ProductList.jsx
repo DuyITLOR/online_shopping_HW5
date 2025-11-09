@@ -27,6 +27,7 @@ const ProductList = () => {
             p.set("_sort", sort);
         if (q) 
             p.set("name", q);
+        console.log("Query param:", q)
         return p.toString();
     },[category, sort, page, q])
 
@@ -34,6 +35,7 @@ const ProductList = () => {
         let isMounted = true;
         const loadProducts = async () => {
             try {
+                console.log("Query:", queryString)
                 const res = await http.get(`/products?${queryString}`);
                 setError(null);
                 setLoading(true);
@@ -41,6 +43,8 @@ const ProductList = () => {
                     setProducts(res.data.data);
                     setTotalPages(res.data.pages);
                 }
+
+                console.log(products)
             } catch (error) {
                 if (isMounted) setError(error || "Unable to load products");
                 console.error("Error fetching products:", error);

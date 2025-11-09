@@ -9,6 +9,7 @@ const Header = ({ title = "" }) => {
         e.preventDefault();
         if(keyword.trim())
         {
+            console.log("Keyword: ", keyword)
             navigate(`/products?q=${keyword.trim()}`)
             setKeyWord("")
         }
@@ -38,10 +39,14 @@ const Header = ({ title = "" }) => {
                         </div>
                         <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
                             <div className="relative mt-3 md:hidden">
-                                <form>
+                                <form  onSubmit = {handleSearch}>
                                     <div className="absolute inset-y-0 end-3 flex items-center ps-3 pointer-events-none"><svg className="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                                    </svg></div><input className="block text-sm focus:ring-blue-500 focus:border-orange-600 w-full border !border-orange-400 rounded-full py-2.5 px-5 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Search..." type="text" defaultValue />
+                                    </svg></div>
+                                    <input  
+                                        value = {keyword}
+                                        onChange = {(e) => setKeyWord(e.target.value)}
+                                        className="block text-sm focus:ring-blue-500 focus:border-orange-600 w-full border !border-orange-400 rounded-full py-2.5 px-5 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Search..." type="text" />
                                 </form>
                             </div>
                         </div>

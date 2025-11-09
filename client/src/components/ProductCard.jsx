@@ -9,8 +9,7 @@ const ProductCard = ({product}) => {
             <div className="border border-gray-300 rounded hover:shadow-lg transition flex flex-col"><Link to = {`/products/${product.id}`} data-discover="true"><img className="w-full" src={product.imagePath} /></Link>
                 <div className="p-4 flex flex-col flex-grow">
                     <h6 className="font-medium mb-2">
-                        <Link to = {`/products/${product.id}`} data-discover="true">{product.name}
-                            Tuna</Link>
+                        <Link to = {`/products/${product.id}`} data-discover="true">{product.name}</Link>
                     </h6>
                     <div className="flex items-center">
                         <RatingStars stars = {product.stars}/>
